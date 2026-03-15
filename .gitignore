@@ -1,0 +1,5 @@
+*.log
+*.pid
+nohup.out
+__pycache__/
+tmp/
