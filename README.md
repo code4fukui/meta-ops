@@ -213,3 +213,177 @@ This is especially useful for:
 
 - `tmp/` is ignored and can be used for local scratch files.
 - Logs, PID files, and Python cache files are ignored.
+
+## End-to-End Walkthrough
+
+This section documents a full reproducible run for large-scale README globalization across an organization.
+
+### 1. Launch and Prepare EC2
+
+Suggested baseline for large org batches:
+- Ubuntu 24.04 LTS
+- 4 vCPU / 16 GB RAM class instance (or larger)
+- enough disk for full repo checkout (often 100+ GB depending on org size)
+
+Install runtime dependencies:
+
+```bash
+sudo apt-get update
+sudo apt-get install -y git python3 python3-pip python3-venv python3-pil ffmpeg rsync curl
+```
+
+### 2. Configure AWS Bedrock Access
+
+Attach an IAM role to the EC2 instance with Bedrock runtime invoke permission in `us-east-1`.
+
+Quick verification:
+
+```bash
+python3 - <<'PY'
+import boto3
+boto3.client('bedrock-runtime', region_name='us-east-1')
+print('bedrock ok')
+PY
+```
+
+### 3. Configure GitHub Access on EC2
+
+Create a dedicated SSH key for the server and add it to your GitHub account:
+
+```bash
+ssh-keygen -t ed25519 -C "ec2-readme-ops" -f ~/.ssh/ec2_readme_ops
+cat ~/.ssh/ec2_readme_ops.pub
+```
+
+Add SSH config:
+
+```bash
+cat >> ~/.ssh/config << 'EOF'
+Host github.com
+	IdentityFile ~/.ssh/ec2_readme_ops
+	User git
+EOF
+chmod 600 ~/.ssh/config
+ssh -T git@github.com
+```
+
+Note: accept the SSH host fingerprint once interactively before starting background jobs.
+
+### 4. Clone Repos
+
+Clone this repo:
+
+```bash
+cd ~
+git clone https://github.com/code4fukui/meta-ops.git
+mkdir -p ~/code4fukui
+```
+
+Then clone your target org repos into `~/code4fukui`. One reproducible approach is using GitHub API paging:
+
+```bash
+cat > ~/clone_all.sh << 'BASH'
+#!/usr/bin/env bash
+set -euo pipefail
+
+ORG="code4fukui"
+OUT="$HOME/code4fukui"
+LOG="$HOME/clone.log"
+mkdir -p "$OUT"
+cd "$OUT"
+
+echo "=== clone start $(date -Iseconds) ===" | tee -a "$LOG"
+page=1
+while true; do
+	urls=$(curl -fsSL "https://api.github.com/orgs/$ORG/repos?type=public&per_page=100&page=$page" \
+		| python3 -c "import sys, json; d=json.load(sys.stdin); [print(x['ssh_url']) for x in d]")
+
+	[[ -z "$urls" ]] && break
+
+	while IFS= read -r url; do
+		[[ -z "$url" ]] && continue
+		name=$(basename "$url" .git)
+		if [[ -d "$name/.git" ]]; then
+			echo "SKIP $name" | tee -a "$LOG"
+		else
+			if git clone --depth=1 "$url"; then
+				echo "OK   $name" | tee -a "$LOG"
+			else
+				echo "FAIL $name" | tee -a "$LOG"
+			fi
+		fi
+	done <<< "$urls"
+
+	page=$((page + 1))
+done
+echo "=== clone done $(date -Iseconds) ===" | tee -a "$LOG"
+BASH
+
+chmod +x ~/clone_all.sh
+bash ~/clone_all.sh
+```
+
+### 5. Run Generation (Vision Enabled)
+
+Run foreground:
+
+```bash
+cd ~/meta-ops
+python3 src/generate_readmes_full_refresh.py
+```
+
+Or run in background safely:
+
+```bash
+cd ~/meta-ops
+nohup env README_MAX_WORKERS=2 README_SLEEP_BETWEEN=1.5 README_THROTTLE_JITTER=2.0 \
+	python3 src/generate_readmes_full_refresh.py > ~/regen_vision.log 2>&1 < /dev/null &
+echo $! > ~/regen_vision.pid
+```
+
+Monitor progress:
+
+```bash
+tail -f ~/regen_vision.log
+```
+
+### 6. Audit Quality
+
+```bash
+cd ~/meta-ops
+python3 src/readme_quality_audit.py
+```
+
+### 7. Commit Locally (No Push)
+
+```bash
+cd ~/meta-ops
+python3 src/commit_readmes_local.py
+```
+
+### 8. Push in Controlled Batches
+
+```bash
+cd ~/meta-ops
+python3 src/push_readmes.py
+```
+
+Recommended practice:
+- push small batches first
+- manually review representative repos
+- continue rollout after validation
+
+### 9. Verify and Resume
+
+If a long run is interrupted:
+- generation can be restarted with the same script
+- commit/push steps are designed for resumable git state
+
+Useful checks:
+
+```bash
+pgrep -af 'generate_readmes_full_refresh.py|commit_readmes_local.py|push_readmes.py'
+tail -n 50 ~/regen_vision.log
+tail -n 50 ~/commit_readmes_local.log
+tail -n 50 ~/push.log
+```
