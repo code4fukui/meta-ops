@@ -17,6 +17,8 @@ It does not include private infrastructure config, one-off recovery scripts, or 
 - [src/commit_readmes_local.py](src/commit_readmes_local.py): create local README-only commits across repos
 - [src/push_readmes.py](src/push_readmes.py): push README-only commits safely with resumable behavior
 - [src/readme_quality_audit.py](src/readme_quality_audit.py): audit generated READMEs and produce a quality report
+- [src/ops/](src/ops): archived and ad-hoc operational scripts used during staged rollout and recovery work
+- [safe_first_candidates.txt](safe_first_candidates.txt): conservative shortlist of repos to handle first (low README regression risk)
 - [REPOSITORY_GUIDE.md](REPOSITORY_GUIDE.md): high-level map of the repository ecosystem
 
 ## Requirements
@@ -213,6 +215,7 @@ This is especially useful for:
 
 - `tmp/` is ignored and can be used for local scratch files.
 - Logs, PID files, and Python cache files are ignored.
+- Keep one canonical candidate list at repo root: `safe_first_candidates.txt`.
 
 ## End-to-End Walkthrough
 
