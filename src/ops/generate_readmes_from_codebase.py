@@ -9,6 +9,7 @@ Usage:
 """
 
 import os
+import re
 import sys
 import json
 import argparse
@@ -89,6 +90,58 @@ def analyze_pyproject_toml(repo_path: str) -> Dict:
         return info
     except Exception:
         return {}
+
+def analyze_html_file(repo_path: str, repo_name: str = "") -> Dict:
+    """Extract project context from index.html (and primary .js if present): title, h1, imports, attribution."""
+    html_file = os.path.join(repo_path, "index.html")
+    if not os.path.exists(html_file):
+        return {}
+    try:
+        with open(html_file, "r", errors="ignore") as f:
+            content = f.read()
+        # Also read primary JS file (repo_name.js) if it exists
+        if repo_name:
+            js_file = os.path.join(repo_path, f"{repo_name}.js")
+            if os.path.exists(js_file):
+                with open(js_file, "r", errors="ignore") as f:
+                    content += "\n" + f.read()
+        result = {}
+        title_match = re.search(r"<title[^>]*>([^<]+)</title>", content, re.IGNORECASE)
+        if title_match:
+            result["title"] = title_match.group(1).strip()
+        h1_match = re.search(r"<h1[^>]*>(?:<[^>]+>)*([^<]+)", content, re.IGNORECASE)
+        if h1_match:
+            result["h1"] = h1_match.group(1).strip()
+        imports = re.findall(r'import\s+.*?from\s+"(https?://[^"]+)"', content)
+        result["imports"] = imports
+        # Strip HTML tags from attribution lines, then extract text
+        attr_raw = re.findall(r"(?:DATA:|Data source:|データ:)(?:[^\n<>]|<[^>]+>)*", content)
+        attr_lines = []
+        for a in attr_raw:
+            clean = re.sub(r"<[^>]+>", " ", a).strip()
+            clean = re.sub(r"\s+", " ", clean).strip()
+            if len(clean) > 6:
+                attr_lines.append(clean)
+        result["attribution"] = attr_lines
+        return result
+    except Exception:
+        return {}
+
+
+def get_demo_url(repo_path: str, repo_name: str) -> str:
+    """Return demo URL: from existing README if present, else construct GitHub Pages URL."""
+    readme_file = os.path.join(repo_path, "README.md")
+    if os.path.exists(readme_file):
+        try:
+            with open(readme_file, "r", errors="ignore") as f:
+                content = f.read()
+            match = re.search(r"https://code4fukui\.github\.io/[^\s\)\]]+", content)
+            if match:
+                return match.group(0).rstrip("/") + "/"
+        except Exception:
+            pass
+    return f"https://code4fukui.github.io/{repo_name}/"
+
 
 def discover_source_structure(repo_path: str) -> Dict:
     """Analyze source code structure and main directories."""
@@ -288,7 +341,7 @@ def get_key_dependencies(pkg_info: Dict, py_deps: List[str]) -> Tuple[List[str],
 
 def generate_readme(repo_name: str, repo_path: str) -> str:
     """Generate a substantive README from codebase analysis."""
-    
+
     # Analyze the repo
     pkg_info = analyze_package_json(repo_path)
     py_deps = analyze_requirements_txt(repo_path)
@@ -297,32 +350,42 @@ def generate_readme(repo_name: str, repo_path: str) -> str:
     project_type = detect_project_type(repo_name, pkg_info, structure, py_deps)
     readme_hints = extract_readme_hints(repo_path)
     npm_deps, py_full_deps = get_key_dependencies(pkg_info, py_deps)
-    
+    html_info = analyze_html_file(repo_path, repo_name)
+    demo_url = get_demo_url(repo_path, repo_name)
+
     # Build README
     lines = []
-    
+
     # Title
-    lines.append(f"# {repo_name.replace('-', ' ').title()}")
+    lines.append(f"# {repo_name}")
     lines.append("")
-    
-    # Description with more context
+
+    # Description: prefer package.json/pyproject, then HTML title, then fallback
     if pkg_info.get("description"):
         desc = pkg_info["description"]
     elif py_project.get("description"):
         desc = py_project["description"]
     else:
-        desc = f"A {project_type} repository."
-    
+        html_title = html_info.get("title", "")
+        # Strip " demo" suffix and check it's not just the repo name
+        html_title_clean = re.sub(r"\s+demo$", "", html_title, flags=re.IGNORECASE).strip()
+        if html_title_clean and html_title_clean.lower() != repo_name.lower():
+            desc = html_title_clean
+        else:
+            desc = f"A {project_type} by [Code for FUKUI](https://github.com/code4fukui)."
+
     lines.append(desc)
     lines.append("")
-    
+
+    # Demo link
+    lines.append(f"**Live demo**: {demo_url}")
+    lines.append("")
+
     if pkg_info and pkg_info.get("version"):
         lines.append(f"**Version**: {pkg_info.get('version', 'Latest')}")
         lines.append("")
-    
-    # Features section (if we can detect them)
-    lines.append("## Features")
-    lines.append("")
+
+    # Features section (only add features we actually detected)
     features = []
     if "react" in str(pkg_info.get("dependencies", {})).lower():
         features.append("- Built with React for dynamic, responsive UIs")
@@ -330,31 +393,60 @@ def generate_readme(repo_name: str, repo_path: str) -> str:
         features.append("- 3D graphics and visualization using Three.js")
     if readme_hints:
         for hint in readme_hints.split(";"):
-            features.append(f"- {hint.strip()}")
+            h = hint.strip()
+            if h:
+                features.append(f"- {h.capitalize()}")
     if structure.get("has_tests"):
         features.append("- Comprehensive test coverage")
     if structure.get("typescript"):
         features.append("- Full TypeScript support for type safety")
-    
-    if not features:
-        lines.append("- Production-ready codebase")
-        lines.append("- Well-structured project organization")
-        lines.append("- Modern development tools and practices")
-    else:
-        lines.extend(features)
-    lines.append("")
-    
+    # Infer from HTML imports
+    if html_info.get("imports"):
+        import_str = " ".join(html_info["imports"]).lower()
+        if "monaco" in import_str:
+            features.append("- Monaco editor integration")
+        if "indexedstorage" in import_str or "indexed" in import_str:
+            features.append("- Persistent local storage via IndexedDB")
+        if "qr" in import_str or "qrcode" in import_str:
+            features.append("- QR code generation")
+        if "mp3" in import_str or "audio" in import_str:
+            features.append("- In-browser audio recording and MP3 encoding")
+        if "d3" in import_str:
+            features.append("- Data visualization with D3.js")
+        if "csv" in import_str:
+            features.append("- CSV data parsing")
+        if "three" in import_str:
+            features.append("- 3D rendering with Three.js")
+
+    # Deduplicate features: skip if an existing feature subsumes this one or vice versa
+    unique_features = []
+    for f in features:
+        f_lower = f.lstrip("- ").lower()
+        dominated = any(f_lower in x.lstrip("- ").lower() or x.lstrip("- ").lower() in f_lower
+                        for x in unique_features)
+        if not dominated:
+            # Replace any existing item that this new item subsumes
+            unique_features = [x for x in unique_features
+                                if x.lstrip("- ").lower() not in f_lower]
+            unique_features.append(f)
+
+    if unique_features:
+        lines.append("## Features")
+        lines.append("")
+        lines.extend(unique_features)
+        lines.append("")
+
     # Tech stack - expanded
     lines.append("## Technology Stack")
     lines.append("")
-    
+
     if npm_deps:
         lines.append("**Node.js / NPM Packages:**")
         lines.append("")
         for dep in npm_deps:
             lines.append(f"- `{dep}`")
         lines.append("")
-    
+
     if py_full_deps:
         lines.append("**Python Packages:**")
         lines.append("")
@@ -362,7 +454,15 @@ def generate_readme(repo_name: str, repo_path: str) -> str:
             clean = dep.split("==")[0].split(">=")[0].split("<")[0].strip()
             lines.append(f"- `{clean}`")
         lines.append("")
-    
+
+    if html_info.get("imports"):
+        lines.append("**Browser modules (ES imports):**")
+        lines.append("")
+        for imp in html_info["imports"][:8]:
+            mod = imp.split("/")[-1]
+            lines.append(f"- [`{mod}`]({imp})")
+        lines.append("")
+
     if structure.get("typescript"):
         lines.append("- **Language**: TypeScript")
     if structure.get("vite"):
@@ -373,9 +473,7 @@ def generate_readme(repo_name: str, repo_path: str) -> str:
         lines.append("- **Framework**: Next.js")
     lines.append("")
     
-    # Project structure
-    lines.append("## Project Structure")
-    lines.append("")
+    # Project structure (only emit section if directories were detected)
     structure_items = []
     if structure.get("has_src"):
         structure_items.append("- `src/` — Main source code")
@@ -397,21 +495,24 @@ def generate_readme(repo_name: str, repo_path: str) -> str:
         structure_items.append("- `public/` — Static assets (images, fonts, etc.)")
     
     if structure_items:
+        lines.append("## Project Structure")
+        lines.append("")
         lines.extend(structure_items)
-    lines.append("")
-    
+        lines.append("")
+
     # Installation
     lines.append("## Installation & Setup")
     lines.append("")
-    
-    install_instructions = get_install_instructions(repo_name, repo_path, pkg_info, py_deps, structure)
-    if install_instructions:
+
+    if pkg_info or py_deps:
+        install_instructions = get_install_instructions(repo_name, repo_path, pkg_info, py_deps, structure)
         lines.append(install_instructions)
     else:
-        lines.append("Clone the repository and follow the configuration instructions in the project root.")
-    
+        lines.append("No build step required. Clone the repository and open `index.html` in a browser,")
+        lines.append(f"or visit the live demo at {demo_url}")
+
     lines.append("")
-    
+
     # Scripts/Commands section
     if pkg_info and pkg_info.get("scripts"):
         lines.append("## Available Commands")
@@ -421,28 +522,31 @@ def generate_readme(repo_name: str, repo_path: str) -> str:
             pkg_manager = "pnpm"
         elif os.path.exists(os.path.join(repo_path, "yarn.lock")):
             pkg_manager = "yarn"
-        
+
         for script, cmd in pkg_info.get("scripts", {}).items():
             lines.append(f"- `{pkg_manager} run {script}` — {cmd}")
         lines.append("")
-    
+
+    # Attribution lines preserved from HTML
+    if html_info.get("attribution"):
+        lines.append("## Data Sources")
+        lines.append("")
+        for attr in html_info["attribution"]:
+            lines.append(f"- {attr}")
+        lines.append("")
+
     # Contributing
     lines.append("## Contributing")
     lines.append("")
-    lines.append("Contributions are welcome! Please feel free to submit issues or pull requests to improve this project.")
+    lines.append("Contributions are welcome. Please open an issue or pull request on GitHub.")
     lines.append("")
-    
+
     # Footer with license link
     lines.append("## License")
     lines.append("")
-    lines.append("This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for full details.")
+    lines.append("MIT License. See [LICENSE](./LICENSE) for details.")
     lines.append("")
-    
-    # Additional reference
-    lines.append("## More Information")
-    lines.append("")
-    lines.append("For additional documentation and examples, refer to the project files and source code.")
-    
+
     return "\n".join(lines)
 
 def push_updated_readme(repo_path: str, repo_name: str, branch: str, readme_content: str) -> Tuple[bool, str]:
