@@ -550,48 +550,42 @@ def generate_readme(repo_name: str, repo_path: str) -> str:
     return "\n".join(lines)
 
 def push_updated_readme(repo_path: str, repo_name: str, branch: str, readme_content: str) -> Tuple[bool, str]:
-    """Create commit and push updated README to review branch."""
+    """Write README.md, commit it alone (no amend), and push to review branch via SSH."""
     try:
         # Write README.md
         readme_path = os.path.join(repo_path, "README.md")
         with open(readme_path, "w") as f:
             f.write(readme_content)
-        
-        # Git operations in repo
+
+        # Stage README.md only — never touch other files
         run_cmd("git add README.md", cwd=repo_path)
-        
-        # Check if there are actual changes
-        rc, stdout, _ = run_cmd("git diff --cached --stat", cwd=repo_path)
-        if not stdout.strip():
+
+        # Confirm there is actually a staged change
+        rc, stdout, _ = run_cmd("git diff --cached --name-only", cwd=repo_path)
+        if "README.md" not in stdout:
             return False, "No changes"
-        
-        # Amend previous commit if on same branch, else create new
+
+        # Always create a new commit (never amend — amend risks pulling in non-README changes)
         rc, _, stderr = run_cmd(
-            f'git commit --amend --no-edit',
+            'git commit -m "docs: update README from codebase analysis"',
             cwd=repo_path
         )
-        
-        if rc != 0 and "nothing to commit" not in stderr.lower():
-            # Try regular commit for first time
-            run_cmd(
-                f'git commit -m "docs: update README from codebase analysis"',
-                cwd=repo_path
-            )
-        
-        # Force push to branch via SSH (avoids HTTPS credential prompts)
+        if rc != 0:
+            return False, stderr.strip() or "Commit failed"
+
+        # Push to review branch via SSH
         ssh_url = f"git@github.com:code4fukui/{repo_name}.git"
         rc, out, err = run_cmd(
             f"git push -f {ssh_url} HEAD:{branch}",
             cwd=repo_path
         )
-        
+
         if rc == 0:
-            # Extract commit SHA
             rc2, sha, _ = run_cmd("git rev-parse HEAD", cwd=repo_path)
             return True, sha.strip() if rc2 == 0 else "pushed"
         else:
             return False, err or "Push failed"
-    
+
     except Exception as e:
         return False, str(e)
 
@@ -624,12 +618,17 @@ def main():
             continue
         
         try:
-            # Ensure we're on the review branch (fetch is best-effort; push uses SSH URL)
             ssh_url = f"git@github.com:code4fukui/{repo_name}.git"
-            run_cmd(f"git fetch {ssh_url}", cwd=repo_path)
+            # Detect default branch name (main or master)
+            _, default_branch, _ = run_cmd(
+                "git symbolic-ref refs/remotes/origin/HEAD --short", cwd=repo_path
+            )
+            default_branch = default_branch.strip().removeprefix("origin/") or "main"
+
+            # Always base the review branch on the default branch tip
+            run_cmd(f"git checkout {default_branch}", cwd=repo_path)
             rc, _, _ = run_cmd(f"git checkout {args.branch}", cwd=repo_path)
             if rc != 0:
-                # Create branch from current HEAD
                 run_cmd(f"git checkout -b {args.branch}", cwd=repo_path)
             
             # Generate README
