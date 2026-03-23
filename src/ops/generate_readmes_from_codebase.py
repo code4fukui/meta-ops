@@ -578,9 +578,10 @@ def push_updated_readme(repo_path: str, repo_name: str, branch: str, readme_cont
                 cwd=repo_path
             )
         
-        # Force push to branch (amend changes)
+        # Force push to branch via SSH (avoids HTTPS credential prompts)
+        ssh_url = f"git@github.com:code4fukui/{repo_name}.git"
         rc, out, err = run_cmd(
-            f"git push -f origin HEAD:{branch}",
+            f"git push -f {ssh_url} HEAD:{branch}",
             cwd=repo_path
         )
         
@@ -623,11 +624,12 @@ def main():
             continue
         
         try:
-            # Ensure we're on the branch
-            run_cmd("git fetch origin", cwd=repo_path)
+            # Ensure we're on the review branch (fetch is best-effort; push uses SSH URL)
+            ssh_url = f"git@github.com:code4fukui/{repo_name}.git"
+            run_cmd(f"git fetch {ssh_url}", cwd=repo_path)
             rc, _, _ = run_cmd(f"git checkout {args.branch}", cwd=repo_path)
             if rc != 0:
-                # Create branch
+                # Create branch from current HEAD
                 run_cmd(f"git checkout -b {args.branch}", cwd=repo_path)
             
             # Generate README
