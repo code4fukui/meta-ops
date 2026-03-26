@@ -4,9 +4,6 @@ Generated: 2026-03-26
 
 # ar-vr360-viewer
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/ar-vr360-viewer/
@@ -39,9 +36,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # chart-line
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
@@ -82,9 +76,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # echizen-coast-kanko-reservation
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 越前海岸エリア 宿泊予約状況（データ出典：福井県観光連盟）
 
 **Live demo**: https://code4fukui.github.io/echizen-coast-kanko-reservation/
@@ -123,9 +114,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # fukui-kanko-reservation
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 あわら温泉エリア 宿泊予約状況（データ出典：福井県観光連盟）
 
@@ -167,9 +155,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # fukui-kanko-trend-data
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/fukui-kanko-trend-data/
@@ -194,9 +179,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # fukui-station-kanko-reservation
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 福井駅前エリア 宿泊予約状況（データ出典：福井県観光連盟）
 
@@ -237,9 +219,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # mp3-recorder
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 MP3レコーダー / mp3rec
 
 **Live demo**: https://code4fukui.github.io/mp3-recorder/
@@ -275,9 +254,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # mp4player
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/mp4player/
@@ -306,9 +282,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # music-new-shoshinge
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 music player
 
@@ -340,9 +313,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # nearornot
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/nearornot/
@@ -368,9 +338,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # neomo.css
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/neomo.css/
@@ -395,9 +362,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # node-jws
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 Implementation of JSON Web Signatures
 
@@ -461,9 +425,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # node-red-contrib-togglebutton
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/node-red-contrib-togglebutton/
@@ -514,9 +475,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # node-sendmail-es
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 Sendmail without setting up SMTP server ES module version
 
@@ -578,9 +536,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # numfont4
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/numfont4/
@@ -605,9 +560,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # obama-kanko-reservation
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 小浜エリア 宿泊予約状況（データ出典：福井県観光連盟）
 
@@ -648,9 +600,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # object-store
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/object-store/
@@ -676,9 +625,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # oecd-opendata
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/oecd-opendata/hoursworked.html/
@@ -703,9 +649,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # omoteuracam
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
@@ -740,9 +683,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # openai-modoration
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/openai-modoration/
@@ -767,9 +707,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # opendata-ishikawa
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
@@ -800,9 +737,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # opendata-miyagi
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 宮城県観光施設マップ
 
 **Live demo**: https://code4fukui.github.io/opendata-miyagi/
@@ -832,9 +766,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # opendata-qa
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/opendata-qa/
@@ -859,9 +790,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # opendata-tokyo-oshima
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
@@ -891,9 +819,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # opendata_sansyoku-rate
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 産食率ダッシュボード
 
@@ -935,9 +860,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # openid-login
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/openid-login/
@@ -963,9 +885,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # pachipachi
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/pachipachi/
@@ -990,9 +909,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # panelist-helper
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 panelist helper
 
@@ -1023,9 +939,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # parseGmap
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/parseGmap/
@@ -1051,9 +964,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # pdf2csv-helper
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/pdf2csv-helper/
@@ -1078,9 +988,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # pentatonic-dice
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 ペンタトニックダイス - pentatonic-dice
 
@@ -1112,9 +1019,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # photoedit
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/photoedit/
@@ -1140,9 +1044,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # photogra-method-cli
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/photogra-method-cli/
@@ -1167,9 +1068,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # pin-of-fukui
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 pin of fukui
 
@@ -1200,9 +1098,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # pip-clock
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 pip-clock - clock with picture in picture API
 
 **Live demo**: https://code4fukui.github.io/pip-clock/
@@ -1231,9 +1126,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # png-splitter
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 PNG splitter
 
@@ -1270,9 +1162,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # png2jpg_mac
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/png2jpg_mac/
@@ -1297,9 +1186,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # poi-sabae
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 さばえちず
 
@@ -1341,9 +1227,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # pokeuchi
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 pokeuchi for tenkey
 
 **Live demo**: https://code4fukui.github.io/pokeuchi/
@@ -1368,9 +1251,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # popup-alert
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
@@ -1401,9 +1281,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # popup-confirm
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/popup-confirm/
@@ -1433,9 +1310,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # popup-message
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 popup-message tag
 
 **Live demo**: https://code4fukui.github.io/popup-message/
@@ -1461,9 +1335,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # process
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/process/
@@ -1488,9 +1359,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # projection-mapping-test
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
@@ -1524,9 +1392,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # qr2link
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
@@ -1562,9 +1427,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # qrclock
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/qrclock/
@@ -1594,9 +1456,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # qrlink-reader
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 QRリンクリーダー
 
 **Live demo**: https://code4fukui.github.io/qrlink-reader/
@@ -1621,9 +1480,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # qrmaker
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
@@ -1660,9 +1516,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # qrreader
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 QR Reader
 
 **Live demo**: https://code4fukui.github.io/qrreader/
@@ -1698,9 +1551,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # querystring
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/querystring/
@@ -1725,9 +1575,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # random
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 randam
 
@@ -1757,9 +1604,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # ratiocalc
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 比計算機/ratiocalc
 
@@ -1795,9 +1639,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # remotecam
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/remotecam/
@@ -1832,9 +1673,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # renew
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/renew/renew-2023-map.html/
@@ -1859,9 +1697,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # require2import
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 require2import helper
 
@@ -1892,9 +1727,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # rgbcolorQ
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 RGB色づくりクイズ rgbcolorQ
 
 **Live demo**: https://code4fukui.github.io/rgbcolorQ/
@@ -1924,9 +1756,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # sabae-jk
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 鯖江市役所JK課
 
@@ -1964,9 +1793,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # sabapay
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 さばペイ
 
@@ -2006,9 +1832,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # sabarepo
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 さばれぽビューワー
 
 **Live demo**: https://code4fukui.github.io/sabarepo/
@@ -2041,9 +1864,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # sabaticket
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 さばチケ
 
@@ -2082,9 +1902,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # safer-buffer
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 Modern Buffer API polyfill without footguns
 
@@ -2143,9 +1960,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # sagalibdb
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/sagalibdb/
@@ -2170,9 +1984,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # sdg1sim
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 じゃんけんゲームシミュレーション
 
@@ -2208,9 +2019,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # seccount
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 びょうかぞえ
 
 **Live demo**: https://code4fukui.github.io/seccount/
@@ -2236,9 +2044,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # SECD.js
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 SECD Virtual Machine in JavaScript
 
 **Live demo**: https://code4fukui.github.io/SECD.js/
@@ -2263,9 +2068,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # select-tree
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 select-tree tag
 
@@ -2302,9 +2104,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # servermemo
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/servermemo/
@@ -2329,9 +2128,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # shinonome-font
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
@@ -2362,9 +2158,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # shinonome2bas
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/shinonome2bas/
@@ -2389,9 +2182,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # showacam
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
@@ -2421,9 +2211,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # shugocam
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
@@ -2458,9 +2245,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # side-nav
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/side-nav/
@@ -2491,9 +2275,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # sideview3d
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/sideview3d/
@@ -2519,9 +2300,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # slide
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/slide/
@@ -2546,9 +2324,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # solar-sim
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 採光シミュレーター
 
@@ -2583,9 +2358,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # spatialphoto-viewer
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 電脳メガネサミット2024 空間写真 for Quest/VisionPro with three.js
 
 **Live demo**: https://code4fukui.github.io/spatialphoto-viewer/
@@ -2615,9 +2387,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # speech
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/speech/
@@ -2642,9 +2411,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # sphere-fukui
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
@@ -2679,9 +2445,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # svgdebug
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/svgdebug/
@@ -2710,9 +2473,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # svgedit
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
@@ -2745,9 +2505,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # table-view
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
@@ -2786,9 +2543,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # taiki_osaka_graph
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/taiki_osaka_graph/
@@ -2825,9 +2579,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # tamba-robocon
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/tamba-robocon/
@@ -2862,9 +2613,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # tape-es
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/tape-es/tape.js";/
@@ -2890,9 +2638,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # tatami-calc
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 tatami calc
 
 **Live demo**: https://code4fukui.github.io/tatami-calc/
@@ -2917,9 +2662,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # tetos
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
@@ -2954,9 +2696,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # text-reverse
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/text-reverse/
@@ -2981,9 +2720,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # threejs_postprocessing
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 A Vue.js application by [Code for FUKUI](https://github.com/code4fukui).
 
@@ -3046,9 +2782,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # tiny-inflate-es
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/tiny-inflate-es/tinf_uncompress.js";/
@@ -3073,9 +2806,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # tok2jpn
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 トキポナ辞書 - tok2jpn
 
@@ -3110,9 +2840,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # tokipona-input
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/tokipona-input/
@@ -3138,9 +2865,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # tokyo-fukui-map
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 東京で感じる福井マップ
 
 **Live demo**: https://code4fukui.github.io/tokyo-fukui-map/
@@ -3165,9 +2889,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # trail-map
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 登山路マップ
 
@@ -3208,9 +2929,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # tsukuroute
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/tsukuroute/
@@ -3236,9 +2954,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # tsuruga-akiya
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/tsuruga-akiya/
@@ -3263,9 +2978,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # txt2hash
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
@@ -3298,9 +3010,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # txtbeauty
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
@@ -3336,9 +3045,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # uozu
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/uozu/elementary-uozu.html/
@@ -3363,9 +3069,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # urlsafe-base64
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 URL Safe Base64 encoding
 
@@ -3428,9 +3131,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # voxel-trees
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 generate voxel trees
 
 **Live demo**: https://code4fukui.github.io/voxel-trees/
@@ -3476,9 +3176,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # vr-autumn
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/vr-autumn/
@@ -3519,9 +3216,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # vr-bezier
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 BezierVR
 
 **Live demo**: https://code4fukui.github.io/vr-bezier/
@@ -3546,9 +3240,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # vr-drums
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
@@ -3578,9 +3269,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # vr-folded6
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 folded 6 by Maeda Mameo for XR with three.js
 
@@ -3617,9 +3305,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # vr-fwistudio
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 VR FWI Studio
 
 **Live demo**: https://code4fukui.github.io/vr-fwistudio/
@@ -3648,9 +3333,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # vr-graph
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
@@ -3681,9 +3363,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # vr-jomon-museum
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 VR 若狭三方縄文博物館 外観 glb-viewer
 
 **Live demo**: https://code4fukui.github.io/vr-jomon-museum/
@@ -3708,9 +3387,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # vr-jump
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 Primitive 3D
 
@@ -3751,9 +3427,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # vr-kudan-kaikan
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/vr-kudan-kaikan/kudankaikan-stairs.usdz/
@@ -3778,9 +3451,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # vr-led
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
@@ -3810,9 +3480,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # vr-ledbars
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 LEDbars
 
@@ -3844,9 +3511,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # vr-lenspark
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/vr-lenspark/
@@ -3876,9 +3540,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # vr-megane-bbeam
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 サンドーム福井
 
 **Live demo**: https://code4fukui.github.io/vr-megane-bbeam/
@@ -3904,9 +3565,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # vr-megane-kaikan
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 VR-megane-kaikan VRめがね会館
 
 **Live demo**: https://code4fukui.github.io/vr-megane-kaikan/
@@ -3931,9 +3589,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # vr-moose
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
@@ -3974,9 +3629,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # vr-oshima
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 雄島
 
 **Live demo**: https://code4fukui.github.io/vr-oshima/
@@ -4001,9 +3653,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # vr-sanzakumagawa
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 XR山座熊川
 
@@ -4033,9 +3682,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # vr-shader
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 VR-shader for Quest/VisionPro with three.js
 
@@ -4070,9 +3716,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # vr-takibi
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 forkedthree.js - WebGPU - Particles
 
 **Live demo**: https://code4fukui.github.io/vr-takibi/
@@ -4102,9 +3745,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # vr-uotome
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 うおとめ - 福井県越前市
 
 **Live demo**: https://code4fukui.github.io/vr-uotome/
@@ -4129,9 +3769,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # vr-vtaiwan
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 VR vTaiwan
 
@@ -4162,9 +3799,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # vr-youthcenter
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 AR福井ユースセンター
 
 **Live demo**: https://code4fukui.github.io/vr-youthcenter/
@@ -4194,9 +3828,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # vr180-fukui
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/vr180-fukui/
@@ -4221,9 +3852,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # vrjs
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 VRで学ぶJavaScript入門
 
@@ -4253,9 +3881,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # wastecalc
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 ウェイスト計算機
 
@@ -4294,9 +3919,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # way-to-sundome
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
@@ -4337,9 +3959,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # wbgt-map
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 今日の暑さ予測マップ - 環境省暑さ指数(WBGT予測)より
 
 **Live demo**: https://code4fukui.github.io/wbgt-map/
@@ -4375,9 +3994,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # webcolorQ
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 色当てクイズ -webcolorQ
 
 **Live demo**: https://code4fukui.github.io/webcolorQ/
@@ -4409,9 +4025,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # webglfilter
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/webglfilter/
@@ -4437,9 +4050,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # webgpu-deno-test
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/webgpu-deno-test/
@@ -4464,9 +4074,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # webmemo
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
@@ -4504,9 +4111,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # webmemofmt
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
@@ -4550,9 +4154,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # webrtc-test
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/webrtc-test/
@@ -4578,9 +4179,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # whereami
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/whereami/
@@ -4605,9 +4203,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # wifiqr-maker
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 WiFi QRコードメーカー
 
@@ -4641,9 +4236,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # xmldom-es
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 A pure JavaScript W3C standard-based (XML DOM Level 2 Core) DOMParser and XMLSerializer module.
 
@@ -4720,9 +4312,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # xr-first
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 XR研修
 
 **Live demo**: https://code4fukui.github.io/vr-tojinbo/tojinbocoaster.html/
@@ -4747,9 +4336,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # xr-progfair
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 PCNこどもプログラマーズフェア リンク集
 
@@ -4776,9 +4362,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # xrhack20231005
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 XR研修
 
 **Live demo**: https://code4fukui.github.io/vr-tojinbo/tojinbocoaster.html/
@@ -4803,9 +4386,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # xrutil
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
@@ -4832,9 +4412,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # yaminome
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/yaminome/
@@ -4860,9 +4437,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 # yoga-layout-prebuilt-es
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
-
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
 **Live demo**: https://code4fukui.github.io/yoga-layout-prebuilt-es/Yoga.js';/
@@ -4887,9 +4461,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # yokohama-hazardmap
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
@@ -4919,9 +4490,6 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ---
 
 # zen-wellbeing
-
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
-
 
 A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
